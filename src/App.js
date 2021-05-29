@@ -1,7 +1,11 @@
+import { useState } from "react";
+import Navbar from "./components/navbar/Navbar"
+
 function App() {
+  const [openMenu, setOpenMenu] = useState(false)
   return (
     <div className="App">
-      Hello!
+      <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
     </div>
   );
 }
