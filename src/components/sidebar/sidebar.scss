@@ -1,0 +1,44 @@
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.5s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  &__list {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 40px;
+
+    li {
+      &:not(:last-child){
+        margin-bottom: 25px;
+      }
+
+      &:hover {
+        font-weight: 500;
+      }
+    }
+
+    a {
+      font-size: inherit;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
