@@ -1,0 +1,122 @@
+@import "../../mixins.scss";
+
+.about {
+  text-align: center;
+
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
+  
+  &__intro {
+    margin-bottom: 3.75rem; //60px
+    @include breakpoint-up(large) {
+      width: 60%;
+    }
+  }
+
+  &__grid {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    padding: 0.9375rem; //15px
+
+    @include breakpoint-up(medium) {
+      flex: 0 0 50%; // grow, shrink, basis
+    }
+
+    @include breakpoint-up(large) {
+      flex: 1;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 1.875rem; // 30px  
+    
+    @include breakpoint-up(large) {
+      margin-bottom: 2.75rem; // 44px
+    }
+
+    img {
+      height: 6rem;
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem; // 20px
+    font-weight: 300;
+    line-height: 1.15;
+    color: hsl(233, 26%, 24%);
+    margin-bottom: 1rem;
+
+    @include breakpoint-up(large) {
+      font-size: 1.5rem; // 24px
+      margin-bottom: 1.5rem; // 24px
+    }
+  }
+
+  &__description {
+    font-size: 0.875rem; // 14px
+    line-height: 1.5;
+  }
+}
+
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+  &--pall {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem; // 96px
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--py {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem; // 96px
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--px {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  &--pt {
+    padding-top: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem; // 96px
+    }
+  }
+
+  &--pb {
+    padding-bottom: 4.375rem;
+    
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--pr {
+    padding-right: 1.5rem;
+  }
+
+  &--pl {
+    padding-left: 1.5rem;
+  }
+}
