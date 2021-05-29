@@ -1,0 +1,39 @@
+.hero {
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+
+  &__text {
+    flex: 0.5;
+
+    h1 {
+      font-size: 60px;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.875rem;
+    }
+  }
+
+  &__image {
+    flex: 0.5;
+    
+    img {
+      width: 100%;
+      height: 80%;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
