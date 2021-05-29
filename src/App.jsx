@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/navbar/Navbar"
 import Sidebar from "./components/sidebar/Sidebar"
 import Hero from "./components/hero/Hero"
+import About from "./components/about/About"
 import "./app.scss"
 
 
@@ -13,6 +14,7 @@ function App() {
       <Sidebar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
       <div className="sections">
         <Hero />
+        <About />
       </div>
     </div>
   );
