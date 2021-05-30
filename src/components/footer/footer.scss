@@ -1,0 +1,146 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.footer {
+  background-color: crimson;
+  color: $white;
+  padding: 2.5rem;
+  text-align: center;
+
+  .container {
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "logo cta" 
+        "logo copyright";
+      justify-items: start;
+      gap: 1rem;
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: logo;
+    }
+
+    img {
+      height: 40px;
+    }
+  }
+
+  &__social {
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: social;
+      align-self: end;
+    }
+
+    a {
+      display: inline-block;
+      align-self: end;
+    }
+
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    img {
+      height: 25px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    font-size: 0.9375rem;
+
+    @include breakpoint-up(large) {
+      align-items: start;
+    }
+
+    &.col-1 {
+      @include breakpoint-up(large) {
+        grid-area: links1;
+      }
+    }
+
+    &.col-2 {
+      
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }      
+      @include breakpoint-up(large) {
+        grid-area: links2;
+      }
+    }
+
+    a {
+      line-height: 2.25;
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        color: yellow;
+      }
+    }
+  }
+
+  &__cta {
+    
+    @include breakpoint-up(large) {
+      grid-area: cta;
+      text-align: right;
+      justify-self: end;
+    }
+    a.button {
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 0.8125rem;
+
+    @include breakpoint-up(large) {
+      grid-area: copyright;
+      align-self: end;
+      justify-self: end;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  font-size: $sm-font;
+  background: $purple;
+  padding: 0.875rem 2.1875rem;
+  border: 0;
+  color: white;
+  border-radius: 50px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: $sm-font;
+  transition: opacity 300ms ease-in-out;
+
+  &:hover {
+    opacity: 0.90;
+  }
+}
