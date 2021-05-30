@@ -14,10 +14,10 @@ export default function Sidebar({openMenu, setOpenMenu}) {
           <a href="#work">Work Experience</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="#">Hobbies</a>
+          <a href="#hobby">Hobbies</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="#">Contact</a>
+          <a href="#footer">Contact</a>
         </li>
       </ul>
     </div>

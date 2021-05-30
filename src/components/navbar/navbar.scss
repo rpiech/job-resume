@@ -20,7 +20,7 @@
     font-size: 40px;
     font-weight: 700;
     text-decoration: none;
-    color: black;
+    color: $darkBlue;
   }
 
   &__hamburger {
@@ -34,7 +34,7 @@
     span {
       width: 100%;
       height: 5px;
-      background-color: black;
+      background-color: $darkBlue;
       transform-origin: 2px 3px;
       transition: all 300ms ease-in-out;
     }
