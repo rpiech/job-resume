@@ -41,67 +41,6 @@
     }
   }
 
-  &__social {
-    @include breakpoint-down(medium) {
-      margin-bottom: 1.875rem;
-    }
-
-    @include breakpoint-up(large) {
-      grid-area: social;
-      align-self: end;
-    }
-
-    a {
-      display: inline-block;
-      align-self: end;
-    }
-
-    a:not(:last-child) {
-      margin-right: 1rem;
-    }
-
-    img {
-      height: 25px;
-    }
-  }
-
-  &__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 2;
-    font-size: 0.9375rem;
-
-    @include breakpoint-up(large) {
-      align-items: start;
-    }
-
-    &.col-1 {
-      @include breakpoint-up(large) {
-        grid-area: links1;
-      }
-    }
-
-    &.col-2 {
-      
-      @include breakpoint-down(medium) {
-        margin-bottom: 1.875rem;
-      }      
-      @include breakpoint-up(large) {
-        grid-area: links2;
-      }
-    }
-
-    a {
-      line-height: 2.25;
-      transition: color 200ms ease-in-out;
-
-      &:hover {
-        color: yellow;
-      }
-    }
-  }
-
   &__cta {
     
     @include breakpoint-up(large) {
