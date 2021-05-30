@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero"
 import About from "./components/about/About"
 import Work from "./components/work/Work"
 import Hobbies from "./components/hobbies/Hobbies";
+import Footer from "./components/footer/Footer"
 import "./app.scss"
 
 
@@ -20,6 +21,7 @@ function App() {
         <Work />
         <Hobbies />
       </div>
+      <Footer />
     </div>
   );
 }
