@@ -2,7 +2,7 @@ import "./hobbies.scss"
 
 export default function Hobbies() {
   return (
-    <section className="hobby">
+    <section className="hobby" id="hobby">
       <div className="hobby__content container container--pall">
         <h2>My hobbies</h2>
         <div className="hobby__grid">
