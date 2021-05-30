@@ -12,7 +12,7 @@ function App() {
     <div className="app">
       <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
       <Sidebar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
-      <div className="sections">
+      <div>
         <Hero />
         <About />
       </div>

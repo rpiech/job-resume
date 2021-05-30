@@ -1,7 +1,9 @@
+@import "../../variables.scss";
+
 .navbar {
   width: 100%;
   height: 4.375rem; // 70px
-  background-color: red;
+  background-color: crimson;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -18,6 +20,7 @@
     font-size: 40px;
     font-weight: 700;
     text-decoration: none;
+    color: black;
   }
 
   &__hamburger {
@@ -38,7 +41,7 @@
   }
 
   &.active {
-    background-color: blue;
+    background-color: $purple;
 
     .navbar__hamburger {
       span {
