@@ -6,7 +6,7 @@ export default function About() {
       <div className="about__content container container--pall">
         <div className="about__intro">
           <h2>Why should you choose me?</h2>
-          <p>Passionate and willing to learn junior front-end developer with a little background in back-end development ( Ruby on rails ). Looking for an opportuinty to work in team and develop my skills even further.</p>
+          <p>Passionate and eager to learn junior front-end developer with a little background in back-end development ( Ruby on rails ). Looking for an opportunity to work in team and develop my skills even further.</p>
         </div>
         <div className="about__grid">
           <div className="about__item">
@@ -33,7 +33,7 @@ export default function About() {
               JavaScript
             </div>
             <div className="about__description">
-              Knowledge of JavaScript comes in handy with simple things like slider.
+              Knowledge of JavaScript comes in handy with simple things like mapping. I usually read Kyle Simpson "You Don't Know JS Yet" and follow new things on dev.to or twitter.
             </div>
           </div>
           <div className="about__item">
