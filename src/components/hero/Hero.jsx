@@ -1,4 +1,4 @@
-import "./hero.scss"
+import "./hero.scss";
 
 export default function Hero() {
   return (

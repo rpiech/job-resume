@@ -11,6 +11,7 @@
     margin-bottom: 3.75rem; //60px
     @include breakpoint-up(large) {
       width: 60%;
+      text-align: left;
     }
   }
 
