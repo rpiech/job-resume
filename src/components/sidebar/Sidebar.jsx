@@ -6,23 +6,28 @@ export default function Sidebar({openMenu, setOpenMenu}) {
     <div className={"sidebar " + (openMenu && "active")}>
       <ul className="sidebar__list">
         <li onClick={() => setOpenMenu(false)}>
-          <a href="/#">Home</a>
+          <a href="/job-resume/#">Home</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-        <a href="/#about">About me</a>
+        <a href="/job-resume/#about">About me</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="/#work">Work</a>
+          <a href="/job-resume/#work">Work</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="/#hobby">Hobbies</a>
+          <a href="/job-resume/#hobby">Hobbies</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="/#footer">Contact</a>
+          <a href="/job-resume/#footer">Contact</a>
         </li>
         <Link to="/experience">
           <li onClick={() => setOpenMenu(false)}>
-            <a href="/experience">Experience</a>
+            <a>Experience</a>
+          </li>
+        </Link>
+        <Link to="/game">
+          <li onClick={() => setOpenMenu(false)}>
+            <a>Game</a>
           </li>
         </Link>
       </ul>

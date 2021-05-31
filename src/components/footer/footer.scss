@@ -2,6 +2,7 @@
 @import "../../mixins.scss";
 
 .footer {
+  z-index: 2;
   background-color: crimson;
   color: $white;
   padding: 2.5rem;

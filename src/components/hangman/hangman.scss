@@ -1,0 +1,126 @@
+.intro {
+  margin: 6rem auto 2rem;
+  text-align: center;
+}
+
+.game__container {
+  background-color: crimson;
+  padding: 20px 30px;
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 450px;
+}
+
+.hangman__container {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.hangman__part {
+  display: none;
+}
+
+.wrong-letters__container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: white;
+}
+
+.wrong-letters__container p {
+  margin: 0 0 5px;
+}
+
+.wrong-letters__container span {
+  font-size: 24px;
+}
+
+.word {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+
+.letter {
+  color: white;
+  border-bottom: 3px solid white;
+  display: inline-flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  height: 50px;
+  width: 20px;
+}
+
+.popup__container {
+  background-color: rgba(0,0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: crimson;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.popup h3 {
+  color: white;
+}
+
+.popup button {
+  cursor: pointer;
+  background-color: #fff;
+  color: crimson;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+}
+
+.popup button:active {
+  transform: scale(0.98);
+}
+
+.popup button:focus {
+  outline: 0;
+}
+
+.notification__container {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+  position: relative;
+  width: 300px;
+  margin: auto;
+  bottom: -80px;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.notification__container p {
+  margin: 0;
+}
+
+.notification__container.show {
+  transform: translateY(-70px);
+}
