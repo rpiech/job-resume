@@ -7,23 +7,34 @@ import Work from "./components/work/Work"
 import Hobbies from "./components/hobbies/Hobbies";
 import Footer from "./components/footer/Footer"
 import "./app.scss"
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { Experience } from "./components/experience/Experience";
 
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false)
   return (
-    <div className="app">
-      <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
-      <Sidebar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
-      <div>
-        <Hero />
-        <About />
-        <Work />
-        <Hobbies />
+    <Router>
+      <div className="app">
+        <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <Sidebar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/experience" component={Experience} />
+        </Switch>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Router>
   );
 }
+
+const Home = () => (
+  <div>
+    <Hero />
+    <About />
+    <Work />
+    <Hobbies />
+  </div>
+)
 
 export default App;
