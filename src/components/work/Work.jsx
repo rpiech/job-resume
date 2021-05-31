@@ -8,7 +8,7 @@ export default function Work() {
     <section className="work" id="work">
       <section className="card">
         <div className="card__image">
-          <img src="/images/work.png" alt="" />
+          <img src="http://ipragapolnoc.pl/static/files/gallery/44/f1acc-praca.png" alt="" />
         </div>
         <div className="card__text">
           <h2>Work Experience</h2>
