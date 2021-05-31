@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer__cta">
           <a href="https://github.com/rpiech" className="button">My GitHub</a>
         </div>
-        <div className="footer__copyright">Lorem Ipsum Dolet 2021</div>
+        <div className="footer__copyright">Made by Rafał Piech 2021</div>
       </div>
     </footer>
 

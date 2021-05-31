@@ -10,7 +10,7 @@ export default function About() {
         </div>
         <div className="about__grid">
           <div className="about__item">
-            <div className="about__icon"><img src="/images/html.png" alt=""/></div>
+            <div className="about__icon"><img src="https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon-by-vexels.png" alt=""/></div>
             <div className="about__title">
               HTML 5
             </div>
@@ -19,7 +19,7 @@ export default function About() {
             </div>
           </div>
           <div className="about__item">
-            <div className="about__icon"><img src="images/css.png" alt=""/></div>
+            <div className="about__icon"><img src="https://3.bp.blogspot.com/-oRSUw_TmO9o/XIb61m88fcI/AAAAAAAAIq0/vnxl2zzsXEQsnHI2fH4GjKu_ZT0urRo4wCK4BGAYYCw/s1600/icon%2Bcss%2B3.png" alt=""/></div>
             <div className="about__title">
               CSS
             </div>
@@ -28,7 +28,7 @@ export default function About() {
             </div>
           </div>
           <div className="about__item">
-            <div className="about__icon"><img src="images/js.png" alt=""/></div>
+            <div className="about__icon"><img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt=""/></div>
             <div className="about__title">
               JavaScript
             </div>
@@ -37,7 +37,7 @@ export default function About() {
             </div>
           </div>
           <div className="about__item">
-            <div className="about__icon"><img src="images/ts.png" alt=""/></div>
+            <div className="about__icon"><img src="https://icons-for-free.com/iconfiles/png/512/vscode+icons+type+typescript-1324451507894042344.png" alt=""/></div>
             <div className="about__title">
               TypeScript
             </div>
