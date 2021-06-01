@@ -10,7 +10,7 @@ import Game from "./components/hangman/Game";
 import "./app.scss"
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { Experience } from "./components/experience/Experience";
-
+import ScrollToTop  from './components/ScrollToTop/ScrollToTop'
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -19,11 +19,12 @@ function App() {
       <div className="app">
         <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
         <Sidebar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
-        <Switch>
-          <Route path="/job-resume" exact component={Home} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/game" component={Game} />
-        </Switch>
+        <ScrollToTop />
+          <Switch>
+            <Route path="/job-resume" exact component={Home} />
+            <Route path="/experience" component={Experience} />
+            <Route path="/game" component={Game} />
+          </Switch>
         <Footer />
       </div>
     </Router>

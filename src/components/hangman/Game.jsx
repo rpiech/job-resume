@@ -54,22 +54,22 @@ function Game() {
   }
 
   return (
-    <>
-    <Intro />
-      <div className="game__container">
-        <Figure wrongLetters={wrongLetters}/>
-        <WrongLetters wrongLetters={wrongLetters}/>
-        <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
-      </div>
-      <Popup 
-        correctLetters={correctLetters}
-        wrongLetters={wrongLetters} 
-        selectedWord={selectedWord} 
-        setPlayable={setPlayable}
-        playAgain={playAgain}
-      />
-      <Notification showNotification={showNotification} />
-    </>
+    <div className="game">
+      <Intro />
+        <div className="game__container">
+          <Figure wrongLetters={wrongLetters}/>
+          <WrongLetters wrongLetters={wrongLetters}/>
+          <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
+        </div>
+        <Popup 
+          correctLetters={correctLetters}
+          wrongLetters={wrongLetters} 
+          selectedWord={selectedWord} 
+          setPlayable={setPlayable}
+          playAgain={playAgain}
+        />
+        <Notification showNotification={showNotification} />
+    </div>
   )
 }
 
