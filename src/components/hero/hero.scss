@@ -1,6 +1,8 @@
 @import "../../mixins.scss";
+@import "../../variables.scss";
 
 .hero {
+  background-color: $gunMetal;
   .container {
     @include breakpoint-up(large){
       display: flex;
@@ -34,6 +36,10 @@
   &__text {
 
     text-align: center;
+
+    h1 {
+      letter-spacing: 2px;
+    }
 
     @include breakpoint-up(large){
       flex: 2;

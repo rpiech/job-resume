@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="hero__image"></div>
       <div className="hero__text container--pall">
         <h1>Rafał Piech</h1>
-        <h2>Junior Front-End Developer</h2>
+        <h3>Junior Front-End Developer</h3>
       </div>
     </div>
   </section>

@@ -10,12 +10,12 @@ export default function Work() {
         <div className="card__image">
           <img src="http://ipragapolnoc.pl/static/files/gallery/44/f1acc-praca.png" alt="" />
         </div>
-        <div className="card__text">
+        <article className="card__text">
           <h2>Work Experience</h2>
           {accordionData.map(({employer, description }) => (
             <Accordion employer={employer} description={description} />
           ))}
-        </div>
+        </article>
       </section>
     </section>
   )

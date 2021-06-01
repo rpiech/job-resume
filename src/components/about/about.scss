@@ -1,6 +1,9 @@
 @import "../../mixins.scss";
+@import "../../variables.scss";
 
 .about {
+  background-color: $xicetix;
+  color: white;
   text-align: center;
 
   @include breakpoint-up(medium) {
@@ -51,7 +54,7 @@
     font-size: 1.25rem; // 20px
     font-weight: 300;
     line-height: 1.15;
-    color: hsl(233, 26%, 24%);
+    color: $blueGreen;
     margin-bottom: 1rem;
 
     @include breakpoint-up(large) {

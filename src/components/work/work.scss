@@ -2,14 +2,19 @@
 @import "../../mixins.scss";
 
 .work {
-  margin-bottom: 4rem;
+  @include breakpoint-up(medium) {
+    padding: 3rem 15px 0 15px
+  }
+
+  background-color: $gunMetal;
+  color: white;
   
   .card {
-    background-color: $featureGray;
+    background-color: $darkLiver;
     border-radius: 2rem;
     padding: 2.875rem 1.5rem;
     max-width: 56rem;
-    margin: 6rem auto;
+    margin: 4rem auto;
    
     &__image img {
       width: 100%;
@@ -24,6 +29,7 @@
 
   .accordion {
     &__question {
+      color: $white;
       display: flex;
       justify-content: space-between;
       width: 100%;
@@ -39,7 +45,7 @@
 
     &__question,
     &__question:focus {
-      outline: solid 1px $featureGray
+      outline: solid 1px $darkLiver
     }
 
     &__question::after {
@@ -50,8 +56,8 @@
       background-size: contain;
       background-position: center center;
       transition: transform 300ms ease-in-out;
-      height: 15px;
-      width: 15px;
+      height: 0.9375rem;
+      width: 0.9375rem;
       transform: rotate(90deg);
     }
     
@@ -99,7 +105,7 @@
     }
 
     .accordion__item {
-      width: 400px;
+      width: 25rem;
       margin-bottom: 2rem;
     }
   }

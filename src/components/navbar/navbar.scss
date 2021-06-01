@@ -1,26 +1,27 @@
 @import "../../variables.scss";
+@import "../../mixins.scss";
 
 .navbar {
   width: 100%;
   height: 4.375rem; // 70px
-  background-color: crimson;
+  background-color: $xicetix;
   position: fixed;
   top: 0;
   z-index: 5;
   transition: all 1s ease;
 
   &__wrapper {
-    padding: 10px 30px;
+    padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   &__logo a {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    color: $darkBlue;
+    color: white;
   }
 
   &__hamburger {
@@ -34,15 +35,13 @@
     span {
       width: 100%;
       height: 5px;
-      background-color: $darkBlue;
+      background-color: white;
       transform-origin: 2px 3px;
       transition: all 300ms ease-in-out;
     }
   }
 
   &.active {
-    background-color: $purple;
-
     .navbar__hamburger {
       span {
         &:first-child {
@@ -55,6 +54,22 @@
           transform: rotate(-45deg);
         }
       }
+    }
+  }
+}
+
+// desktop
+
+.navbar {
+  &__wrapper {
+    @include breakpoint-up(large){
+      padding: 0.625rem 1.875rem;
+    }
+  }
+
+  &__logo a {
+    @include breakpoint-up(large){
+      font-size: 2.5rem;
     }
   }
 }
