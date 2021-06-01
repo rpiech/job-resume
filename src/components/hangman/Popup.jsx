@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { winCondition } from '../../helpers/helpers'; 
+import { winCondition } from '../../helpers/helpers';
+import Stickman from './Stickman'; 
 import './hangman.scss'
 
 const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAgain }) => {
@@ -8,10 +9,10 @@ const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAga
   let playable = true;
 
   if(winCondition(correctLetters, wrongLetters, selectedWord) == 'win' ) {
-    finalMessage = "Good job! You've won!";
+    finalMessage = "Good job! You've freed Steve and he can code again!";
     playable = false;
   } else if ( winCondition(correctLetters, wrongLetters, selectedWord) == 'lose') {
-    finalMessage = "You've lost. Better luck next time!";
+    finalMessage = "You've lost and Steve will never code again. Better luck next time!";
     finalMessageRevealWord = `the word was: ${selectedWord}`;
     playable = false;
   }
@@ -24,6 +25,7 @@ const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAga
         <h3>{finalMessage}</h3>
         <p>{finalMessageRevealWord}</p>
         <button onClick={playAgain}>Play again</button>
+        <Stickman />
       </div>
     </div>
   )
