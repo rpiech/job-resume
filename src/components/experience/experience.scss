@@ -1,6 +1,12 @@
 @import "../../mixins.scss";
+@import "../../variables.scss";
 
 .experience {
+
+  &__topic {
+    color: $blueGreen;
+  }
+
   &__cards {
     display: flex;
     justify-content: space-between;
@@ -10,8 +16,9 @@
   &__card {
     width: calc(100% / 3 - 20px);
     margin: 20px 0;
+    background-color: $darkLiver;
     border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
     padding: 30px 20px;
 
     @include breakpoint-down(medium) {
@@ -23,21 +30,13 @@
     }
   }
 
+  &__icon {
+    margin: auto auto 10px;
+  }
+
   &__icon img {
     height: 60px;
     width: 60px;
-    background-color: crimson;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-  }
-  
-  &__card:hover {
-    background: crimson;
-    color: #FFF;
-  }
-
-  &__card:hover img {
-    background: #FFF;
   }
 }
 

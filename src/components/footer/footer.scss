@@ -3,7 +3,7 @@
 
 .footer {
   z-index: 2;
-  background-color: crimson;
+  background-color: $xicetix;
   color: $white;
   padding: 2.5rem;
   text-align: center;
@@ -70,9 +70,10 @@
 .button {
   display: inline-block;
   font-size: $sm-font;
-  background: $purple;
+  background: $gunMetal;
+  border-radius: 2px;
   padding: 0.875rem 2.1875rem;
-  border: 0;
+  border: 2px solid $blueGreen;
   color: white;
   border-radius: 50px;
   font-weight: 400;
