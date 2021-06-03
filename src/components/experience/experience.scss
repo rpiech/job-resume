@@ -11,6 +11,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include breakpoint-down(small) {
+      justify-content: center;
+    }
   }
 
   &__card {
