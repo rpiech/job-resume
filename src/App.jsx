@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero"
 import About from "./components/about/About"
 import Work from "./components/work/Work"
 import Hobbies from "./components/hobbies/Hobbies";
+import Info from "./components/info/Info";
 import Footer from "./components/footer/Footer"
 import Game from "./components/hangman/Game";
 import "./app.scss"
@@ -37,6 +38,7 @@ const Home = () => (
     <Work />
     <Technologies />
     <Hobbies />
+    <Info />
   </div>
 )
 
