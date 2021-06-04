@@ -15,16 +15,14 @@ export default function Sidebar({openMenu, setOpenMenu}) {
           <a href="/job-resume/#work">Work</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
+          <a href="/job-resume/#technologies">Technologies</a>
+        </li>
+        <li onClick={() => setOpenMenu(false)}>
           <a href="/job-resume/#hobby">Hobbies</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
           <a href="/job-resume/#footer">Contact</a>
         </li>
-        <Link to="/experience">
-          <li onClick={() => setOpenMenu(false)}>
-            <a>Experience</a>
-          </li>
-        </Link>
         <Link to="/game">
           <li onClick={() => setOpenMenu(false)}>
             <a>Game</a>

@@ -67,6 +67,10 @@
     font-size: 0.875rem; // 14px
     line-height: 1.5;
   }
+
+  &__cta a{
+    text-decoration: none;
+  }
 }
 
 .container {

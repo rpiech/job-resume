@@ -3,7 +3,7 @@
 
 .work {
   @include breakpoint-up(medium) {
-    padding: 3rem 15px 0 15px
+    padding: 3rem 15px;
   }
 
   background-color: $gunMetal;
@@ -41,17 +41,18 @@
       text-align: left;
       flex: 0 0 10px;
       font-weight: 700;
+      cursor: pointer;
     }
 
     &__question,
     &__question:focus {
-      outline: solid 1px $darkLiver
+      outline: solid 1px $darkLiver;
     }
 
     &__question::after {
       content: '';
       display: block;
-      background-image: url(./arrow.png);
+      background-image: url(./white-arrow.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center center;
