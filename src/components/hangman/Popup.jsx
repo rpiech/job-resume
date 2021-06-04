@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { winCondition } from '../../helpers/helpers';
 import Stickman from './Stickman'; 
+import { Link } from 'react-router-dom';
 import './hangman.scss'
 
 const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAgain }) => {
@@ -25,6 +26,9 @@ const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAga
         <h3>{finalMessage}</h3>
         <p>{finalMessageRevealWord}</p>
         <button onClick={playAgain}>Play again</button>
+        <Link to="/job-resume">
+          <button className="return--button">Homepage</button>
+        </Link>
         <Stickman />
       </div>
     </div>
