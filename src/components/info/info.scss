@@ -1,0 +1,109 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.info {
+  background-color: $gunMetal;
+  
+  padding: 2rem 0;  
+  
+  &__container {
+    max-width: 69.375rem;
+    margin: auto;
+    
+    &--pall {
+      padding: 2.25rem 1.5rem;
+    }
+ 
+    @include breakpoint-up(large) {
+      min-height: 250px;
+      display: flex;
+      align-items: center;
+    }
+
+    @include breakpoint-down(medium) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__topic {
+    text-align: center;
+    color: $blueGreen;
+  }
+
+  &__image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(./me.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    @include breakpoint-down(medium) {
+      min-height: 250px;
+      background-position: center 60%;
+      background-size: contain;
+      height: 400px;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 2;
+      height: 450px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    height: 100%;
+    
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 1;
+      text-align: left;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      margin-bottom: 2.25rem;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+    color: white;
+    text-align: left;
+  }
+
+  &__list li {
+    padding: 0.5rem 0;
+  }
+
+  &__list--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint-up(large) {
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  &__icon {
+    padding-right: 10px;
+  }
+
+  &__cta {
+    margin-top: 1rem;
+    display: inline-block;  
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

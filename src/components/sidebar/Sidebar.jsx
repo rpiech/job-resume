@@ -21,7 +21,7 @@ export default function Sidebar({openMenu, setOpenMenu}) {
           <a href="/job-resume/#hobby">Hobbies</a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="/job-resume/#footer">Contact</a>
+          <a href="/job-resume/#info">Contact</a>
         </li>
         <Link to="/game">
           <li onClick={() => setOpenMenu(false)}>
