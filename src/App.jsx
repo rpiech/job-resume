@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer"
 import Game from "./components/hangman/Game";
 import "./app.scss"
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import { Experience } from "./components/experience/Experience";
+import Technologies  from "./components/technologies/Technologies";
 import ScrollToTop  from './components/ScrollToTop/ScrollToTop'
 
 function App() {
@@ -22,7 +22,6 @@ function App() {
         <ScrollToTop />
           <Switch>
             <Route path="/job-resume" exact component={Home} />
-            <Route path="/experience" component={Experience} />
             <Route path="/game" component={Game} />
           </Switch>
         <Footer />
@@ -36,6 +35,7 @@ const Home = () => (
     <Hero />
     <About />
     <Work />
+    <Technologies />
     <Hobbies />
   </div>
 )
