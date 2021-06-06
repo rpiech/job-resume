@@ -34,11 +34,11 @@ function App() {
 const Home = () => (
   <div>
     <Hero />
+    <Info />
     <About />
     <Work />
     <Technologies />
     <Hobbies />
-    <Info />
   </div>
 )
 

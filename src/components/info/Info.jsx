@@ -29,15 +29,10 @@ export default function Info() {
             <li>
               <a className="info__list--item">
                 <span className="info__icon"><HomeIcon/></span>
-                <span>Grochowska 233/13 Warsaw Poland</span>
+                <span>Warsaw, Poland</span>
               </a>
             </li>
           </ul>
-          <Link to="/game">
-            <div className="info__cta">
-              <a className="button">Check this cool game I've made</a>
-            </div>
-          </Link>
         </article>
       </div>
     </section>

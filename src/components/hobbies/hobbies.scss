@@ -2,7 +2,7 @@
 @import "../../mixins.scss";
 
 .hobby {
-  background-color: $xicetix;
+  background-color: $gunMetal;
 
   &__grid {
     display: grid;
@@ -66,6 +66,21 @@
 
     @include breakpoint-up(medium) {
       text-align: left;
+    }
+  }
+
+  &__game {
+    margin-top: 2rem;
+    @include breakpoint-up(large) {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .hobby__cta {
+      @include breakpoint-up(large) {
+        margin-left: 1rem;
+      }
     }
   }
 }

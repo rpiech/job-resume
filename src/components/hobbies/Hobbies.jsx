@@ -1,4 +1,5 @@
 import "./hobbies.scss"
+import { Link } from 'react-router-dom'
 
 export default function Hobbies() {
   return (
@@ -39,6 +40,14 @@ export default function Hobbies() {
             </div>
           </article>
         </section>
+        <div className="hobby__game">
+          <p>If you're already bored with my resume:</p>
+          <Link to="/game">
+            <div className="hobby__cta">
+              <a className="button">Check this cool game I've made</a>
+            </div>
+          </Link>
+        </div>
       </div>
     </section>
   )
