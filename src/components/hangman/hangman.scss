@@ -1,4 +1,5 @@
 @import "../../variables.scss";
+@import "../../mixins.scss";
 
 .intro {
   margin: 6rem auto 2rem;
@@ -133,6 +134,10 @@
   bottom: -80px;
   transition: transform 0.3s ease-in-out;
   z-index: -1;
+
+  @include breakpoint-up(x-large) {
+    bottom: -175px;
+  }
 }
 
 .notification__container p {

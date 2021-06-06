@@ -7,6 +7,9 @@
   color: $white;
   padding: 2.5rem;
   text-align: center;
+  @include breakpoint-up(x-large) {
+    margin-top: 6rem;
+  }
 
   .container {
     @include breakpoint-up(large) {
